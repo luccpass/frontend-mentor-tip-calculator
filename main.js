@@ -1,11 +1,3 @@
-/**
- * Pegar o valor total da pedido
- * pegar a porcentagem de desconto
- * pegar a quantidade quem tem que ser dividida
- * calcular
- * exibir resultado
- */
-
 const inputBill = document.querySelector('#bill-input')
 const tipSelect = document.querySelectorAll('.input-tip-wrapper input')
 const numberOfPeople = document.querySelector('#number-of-people')
