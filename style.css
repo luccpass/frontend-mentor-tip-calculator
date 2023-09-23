@@ -1,0 +1,229 @@
+:root {
+    --strong: #26c0ab;
+    --Very-dark-cyan: #00494d;
+    --dark-grayish-cyan: #5e7a7d;
+    --grayish-cyan: #7f9c9f;
+    --vight-grayish-cyan: #c5e4e7;
+    --very-light-grayish-cyan: #f4fafa;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+    font-weight: 700;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--vight-grayish-cyan);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container__tip-calculator {
+    width: 57.5rem;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    background: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.15rem;
+
+    position: relative;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+.tip-calcaulator__left-content {
+    width: 50%;
+    height: 100%;
+}
+
+.tip-calcaulator__right-content {
+    width: 50%;
+    height: 100%;
+    padding: 2.5rem;
+    border-radius: .75rem;
+
+    background-color: var(--Very-dark-cyan);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.right-content__top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right-content__details {
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.details__content__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.details__content__info > h3 {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.details__content__info > span {
+    color: var(--grayish-cyan);
+    font-size: 0.875rem;
+}
+
+.details__content__price-conteiner {
+    color: var(--strong);
+    font-size: 3rem;
+}
+
+.right-content__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-content__button > button {
+    width: 20.8125rem;
+    height: 3rem;
+    border-radius: 0.3125rem;
+
+    background-color: #9FE8DF;
+    border: none;
+    color: #00494d;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.tip-calcaulator__left-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.tip-calcaulator__left-content label {
+    color: var(--grayish-cyan);
+    font-size: 1rem;
+}
+
+.left-content__bill {
+    width: 100%;
+}
+
+.left-content_input {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    background-color: #D9D9D9;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content_input > input{
+    width: 80%;
+    height: 100%;
+    padding-right: 1rem;
+
+    font-size: 1.5rem;
+
+    text-align: right;
+    outline: none;
+    border: none;
+    background: none;
+
+    color: var(--Very-dark-cyan);
+}
+
+/* Selecione os elementos de input do tipo number */
+.left-content_input > input::-webkit-inner-spin-button,
+.left-content_input > input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+.inputs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.left-content_input > span {
+    font-size: 1.5rem;
+    color: #A0B6B5;
+}
+
+.input-tip-wrapper {
+    width: 7.375rem;
+    height: 3rem;
+}
+
+.input-tip-wrapper > input[type="radio"] { 
+    display: none;
+}
+
+.input-tip-wrapper > label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.325rem;
+
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.5s ease;
+}
+
+.input-tip-wrapper > input[type="radio"]:checked + label{
+    background-color: var(--strong);
+}
+
+.input-custom {
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--Very-dark-cyan);
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <script src="./main.js" defer></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Tip calculator app</title>
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="container__tip-calculator">
+
+        <div class="tip-calcaulator__left-content">
+
+          <div class="left-content__bill">
+            <label for="bill-input">Bill</label>
+            <div class="left-content_input">
+              <span>$</span>
+              <input id="bill-input" type="number" placeholder="0" min="1">
+            </div>
+          </div>
+
+          <div class="left-content__select-tip">
+            <label for="">Select Tip %</label>
+
+            <div class="inputs-container">
+
+              <div class="input-tip-wrapper">
+                <input type="radio" name="input-type" id="option1" value="5">
+                <label for="option1">5%</label>
+              </div>
+
+              <div class="input-tip-wrapper">
+                <input type="radio" name="input-type" id="option2" value="10">
+                <label for="option2">10%</label>
+              </div>
+
+              <div class="input-tip-wrapper">
+                <input type="radio" name="input-type" id="option3" value="15">
+                <label for="option3">15%</label>
+              </div>
+
+              <div class="input-tip-wrapper">
+                <input type="radio" name="input-type" id="option4" value="25">
+                <label for="option4">25%</label>
+              </div>
+
+              <div class="input-tip-wrapper">
+                <input type="radio" name="input-type" id="option5" value="50">
+                <label for="option5">50%</label>
+              </div>
+
+              <div class="input-tip-wrapper">
+                <input type="text" class="input-custom" name="input-type" id="custom" placeholder="Custom">
+              </div>
+            </div>
+
+          </div>
+          <div class="left-content__bill">
+            <label for="number-of-people">Number of People</label>
+            <div class="left-content_input">
+              <span>$</span>
+              <input id="number-of-people" type="number" placeholder="1" min="1">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tip-calcaulator__right-content">
+
+          <div class="right-content__top">
+            <div class="right-content__details">
+  
+              <div class="details__content__info">
+                <h3>Tip Amount</h3>
+                <span>/ person</span>
+              </div>
+  
+              <div class="details__content__price-conteiner">
+                <span>$<span class="details__content__price" id="price-person">0.00</span></span>
+              </div>
+  
+            </div>
+
+            <div class="right-content__details">
+  
+              <div class="details__content__info">
+                <h3>Total</h3>
+                <span>/ person</span>
+              </div>
+  
+              <div class="details__content__price-conteiner">
+                <span>$<span class="details__content__price" id="total-price">0.00</span></span>
+              </div>
+  
+            </div>
+
+          </div>
+
+
+
+          <div class="right-content__button">
+            <button>RESET</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Lucas Passos</a>.
+      </div>
+    </div>
+    
+  </body>
+</html>
